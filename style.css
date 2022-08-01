@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital@1&display=swap');
+
+* {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+	/*background-image: url(https://images.pexels.com/photos/2514035/pexels-photo-2514035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);*/
+	background-color: #ffe7ba;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+	display: flex;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+ .logoBlock {
+ 	box-sizing: border-box;
+ 	padding: 20px;
+ }
+
+.logo {
+	flex: 1;
+	font-size: 24px;
+	color: #f77031;;
+	border: 3px solid #f77031;
+	/*box-shadow: 2px 2px 12px #ccc;*/
+	border-radius: 7px;
+	padding: 10px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.phone {
+	padding-top: 20px;
+	flex: 3;
+	display: flex;
+	padding-left: 200px;
+	font-size: 20px;
+}
+
+.phoneText {
+	display: flex;
+	align-items: center;
+	color: #f77031;
+
+}
+
+#phone-animation {
+	box-sizing: border-box;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	font-size: 24px;
+	margin-left: 30px;
+	transition: .5s;
+	border-bottom: 1px solid transparent;
+}
+
+#phone-animation a {
+	color: #f77031;
+}
+
+#phone-animation:hover {
+	transform: scale(1.1);
+	border-bottom: 1.5px solid white;
+}
+
+main {
+	margin: 50px 0 0 0;
+}
+
+main h1 {
+	margin: 0 auto;
+	color: #f77031;
+	border-bottom: 2px solid white;
+}
+
+.list-services {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	width: 250px;
+	height: 200px;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 20px;
+	border: 3px solid #f77031;
+	opacity: .9;
+	transition: .5s;
+}
+
+.card:hover {
+	opacity: 1;
+	transform: scale(1.1);
+	/*box-shadow: 2px 2px 2px #ccc;*/
+	/*box-shadow: rgba(255, 255, 255, 1) 0px 28px 50px 0px;*/
+}
+
+.card span {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: #f77031;
+}
+
+.card a {
+	background: #f77031;
+	border: 2px solid #f77031;
+	border-radius: 10px;
+	transition: .5s;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.card a:hover {
+	background: transparent;
+	color: #f77031;
+}
+
+
+
