@@ -16,14 +16,15 @@ body {
     overflow-x: hidden;
 	/*background-image: url(https://images.pexels.com/photos/2514035/pexels-photo-2514035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);*/
 	background-color: #ffe7ba;
-	background-repeat: no-repeat;
-	background-size: cover;
+	/*background-repeat: no-repeat;
+	background-size: cover;*/
 }
 
 header {
 	display: flex;
 	margin: 0;
 	box-sizing: border-box;
+	flex-wrap: wrap;
 }
 
 .container {
@@ -40,7 +41,6 @@ header {
  }
 
 .logo {
-	flex: 1;
 	font-size: 24px;
 	color: #f77031;;
 	border: 3px solid #f77031;
@@ -62,7 +62,6 @@ header {
 	display: flex;
 	align-items: center;
 	color: #f77031;
-
 }
 
 #phone-animation {
@@ -96,6 +95,8 @@ main h1 {
 }
 
 .list-services {
+	padding-left: 0;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -106,6 +107,7 @@ main h1 {
 	width: 250px;
 	height: 200px;
 	margin: 10px;
+	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -145,5 +147,57 @@ main h1 {
 	color: #f77031;
 }
 
+
+@media (max-width: 599px) {
+	header , .phoneText {
+		justify-content: center;
+	}
+	.container {
+		width: 300px;
+	}
+
+	.logoBlock {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.phone {
+		flex: 1;
+		padding-left: 0;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+
+	.phone #phone-animation {
+		margin-left: 0;
+	}
+	.phone .phoneText, .phone #phone-animation {
+		width: 100%;
+	}
+	
+}
+
+
+@media (min-width: 600px){
+	.container {
+		width: 550px;
+	}
+}
+
+
+@media (min-width: 768px){
+	.container {
+		width: 760px;
+	}
+}
+
+@media (min-width: 980px){
+	.container {
+		width: 960px;
+	}
+}
 
 
