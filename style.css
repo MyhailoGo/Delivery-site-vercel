@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital@1&display=swap');
 
-* {
-	color: white;
+html {
+  scroll-behavior: smooth;
 }
 
 a {
 	text-decoration: none;
+	color: white;
 }
 
 body {
@@ -14,11 +15,18 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 	/*background-image: url(https://images.pexels.com/photos/2514035/pexels-photo-2514035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);*/
-	background-color: #ffe7ba;
+	
 	/*background-repeat: no-repeat;
 	background-size: cover;*/
 }
+
+
+.startPage {
+	background-color: #ffe7ba;
+}
+
 
 header {
 	display: flex;
@@ -147,6 +155,29 @@ main h1 {
 	color: #f77031;
 }
 
+.secondPage {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.contacts {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color:  #f77031;
+	scroll-behavior: smooth;
+}
+
+.contacts h1, .contacts a {
+	color: #f77031;
+}
+
+.contacts a {
+	font-size: 30px;
+}
 
 @media (max-width: 599px) {
 	header , .phoneText {
@@ -155,35 +186,38 @@ main h1 {
 	.container {
 		width: 300px;
 	}
-
+	
 	.logoBlock {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-
 	.phone {
 		flex: 1;
 		padding-left: 0;
 		flex-wrap: wrap;
 		align-items: center;
 	}
-
-
 	.phone #phone-animation {
 		margin-left: 0;
 	}
 	.phone .phoneText, .phone #phone-animation {
 		width: 100%;
 	}
-	
 }
-
 
 @media (min-width: 600px){
 	.container {
 		width: 550px;
+	}
+	header {
+		justify-content: space-around;
+	}
+	.phone {
+		padding-left: 0px;
+		flex-direction: column;
+		flex: none;
 	}
 }
 
@@ -192,6 +226,9 @@ main h1 {
 	.container {
 		width: 760px;
 	}
+	.startPage, .secondPage {
+	height: 100vh;
+	}
 }
 
 @media (min-width: 980px){
@@ -199,5 +236,3 @@ main h1 {
 		width: 960px;
 	}
 }
-
-
