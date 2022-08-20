@@ -256,7 +256,7 @@ header {
 		justify-content: center;
 	}
 	.container {
-		width: 300px;
+		width: 100vw;
 	}
 
 	.logoBlock {
@@ -273,6 +273,11 @@ header {
 
 	.infoBlock .description, .infoBlock .imageBlock {
 		min-width: 300px;
+		padding: 0 10px;
+	}
+
+	.infoBlock .imageBlock {
+		margin-top: 10px;
 	}
 	.aboutUs .infoBlock .imageBlock img {
 		width: 100%;
