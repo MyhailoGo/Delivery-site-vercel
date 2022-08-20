@@ -283,7 +283,7 @@ header {
 		width: 100%;
 	}
 
-	.secondPage .contacts {
+	.contacts {
 		justify-content: flex-start;
 		box-sizing: border-box;
 		padding-top: 20px;
