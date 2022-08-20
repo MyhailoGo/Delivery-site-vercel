@@ -286,7 +286,7 @@ header {
 	.contacts {
 		justify-content: flex-start;
 		box-sizing: border-box;
-		padding-top: 20px;
+		padding-top: 30px;
 	}
 
 	.secondPage .contacts a, .secondPage .contacts h1, .secondPage .contacts h2 {
