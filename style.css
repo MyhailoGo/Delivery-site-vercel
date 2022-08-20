@@ -46,15 +46,19 @@ header {
  	padding: 20px;
  	display: flex;
  	flex-wrap: wrap;
- 	justify-content: space-between;
+ 	justify-content: space-around;
  }
 
  .logoBlock .logo {
+ 	display: flex;
+ 	justify-content: center;
+	align-items: center;
 	font-size: 24px;
-	color: white;;
+	color: white;
 	border: 3px solid white;
 	border-radius: 7px;
 	padding: 10px;
+	
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -111,13 +115,21 @@ header {
 	text-align: center;
 }
 
-main {
+/*main {
 	margin-top: 100px;
 	min-height: 100vh;
 	width: 100%;
+}*/
+.ourServes {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin: 30px 0;
+	box-sizing: border-box;
 }
 
-main h1 {
+.ourServes h1 {
 	margin: 0 auto;
 	color: #0c755b;
 	border-bottom: 2px solid white;
@@ -268,6 +280,10 @@ main h1 {
 
 	.secondPage .contacts {
 		justify-content: flex-start;
+	}
+
+	.secondPage .contacts a, .secondPage .contacts h1, .secondPage .contacts h2 {
+		font-size: 16px;
 	}
 } 
 
